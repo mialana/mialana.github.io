@@ -11,11 +11,11 @@ function HomePage() {
             </Helmet>
             <Navbar />
             <Landing />
-            <Experience />
-            <Skills />
+            {/* <Experience />
+            <Skills /> */}
             <Projects />
             <Artwork />
-            <Contacts />
+            {/* <Contacts /> */}
         </div>
     )
 }
