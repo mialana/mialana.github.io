@@ -8,6 +8,8 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 import './Landing.css';
 
+import headshot from '../../../src/assets/png/headshot-2024.png';
+
 import {
     FaGithub, FaLinkedin, FaInstagram
 } from 'react-icons/fa';
@@ -97,7 +99,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.instagram && (
+                        {/* {socialsData.instagram && (
                             <a
                                 href={socialsData.instagram}
                                 target='_blank'
@@ -109,12 +111,12 @@ function Landing() {
                                     aria-label='Twitter'
                                 />
                             </a>
-                        )}
+                        )} */}
                         
                     </div>
                 </div>
                 <img
-                    src={headerData.image}
+                    src={headshot}
                     alt=''
                     className='landing--img'
                     style={{
