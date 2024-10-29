@@ -136,7 +136,6 @@ function Landing() {
                         <Typed
                             strings={[
                                 'CG Student Researcher',
-                                'Product Management Intern',
                                 'Fullstack Developer',
                                 'Visual Artist']}
                             typeSpeed={40}
