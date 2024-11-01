@@ -11,7 +11,7 @@ function UnderConstruction() {
 
   const Background = styled.div`
     display: flex;
-    height: 80vh;
+    height: 100vh;
     background: ${theme.quaternary};
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ function UnderConstruction() {
   return (
     <Background>
       <Message>{underConstructionData.message}</Message>
-      <video width="720" controls autoplay="true" muted loop>
+      <video width="85%" controls autoplay="true" muted loop>
         <source src={SneakPeek} type="video/mp4" />
         Loading...
       </video>
