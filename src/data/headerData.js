@@ -1,6 +1,6 @@
 
 export const headerData = {
     name: 'Amy M. Liu',
-    description: "Hi! My name is Amy, and I'm currently pursuing an Ivy League undergraduate degree in Digital Media Design (Computer Graphics) at the University of Pennsylvania.",
+    description: "Hi! My name is Amy. I'm currently pursuing my Bachelor's degree in Digital Media Design (3D Computer Programming) at the University of Pennsylvania in the exciting city of Philadelphia, PA.",
     resumePdf: 'https://drive.google.com/file/d/1BUKGqsMUozRcHcDJSdsjtcNRtOpvi8f_/view?usp=sharing'
 }
