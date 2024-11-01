@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import YouTube from 'react-youtube';
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { underConstructionData } from "../../data/underConstructionData";
@@ -24,22 +23,16 @@ function UnderConstruction() {
     width: 60vw;
     text-align: center;
     color: ${theme.tertiary};
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   `;
-
-  const opts = {
-    playerVars: {
-      autoplay: 1,
-      playlist: '2NhI1Orwa90',
-      loop: 1,
-      controls: 1,
-    },
-  }
 
   return (
     <Background>
       <Message>{underConstructionData.message}</Message>
-      <YouTube videoId="2NhI1Orwa90" opts={opts} loading="Loading..." />
+      <video width="720" controls autoplay="true" muted loop>
+        <source src={SneakPeek} type="video/mp4" />
+        Loading...
+      </video>
     </Background>
   );
 }
