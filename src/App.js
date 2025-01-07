@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 import { BackToTop } from './components';
-import { HomePage, ProjectPage } from './pages';
+import { HomePage, ProjectPage, SingleProjectPage } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
 
 import './App.css';
@@ -17,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/projects/" exact component={ProjectPage} />
+          <Route path="/temp/" exact component={SingleProjectPage} />
           <Redirect to="/" />
         </Switch>
       </HashRouter>

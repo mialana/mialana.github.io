@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import { FaCode, FaPlay } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
@@ -71,25 +72,9 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                             />
                         </a>
                         })}
-                        {code !== '' && ( <a
-                            href={code}
-                            target='_blank'
-                            rel='noreferrer'
-                            className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-code`}
-                        >
-                            <FaCode
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-code`}
-                                className={classes.icon}
-                                aria-label='Code'
-                            />
-                        </a> )}
+                        <Link to="temp">
+                            Get More Info
+                        </Link>
                     </div>
                 </div>
                 <p

@@ -8,7 +8,7 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 import './Landing.css';
 
-import headshot from '../../../src/assets/png/headshot-2024.png';
+import headshot from '../../../src/assets/jpg/headshot-v0.jpg';
 
 import {
     FaGithub, FaLinkedin, FaInstagram
