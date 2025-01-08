@@ -120,6 +120,7 @@
   max-width: 85vw;
   max-height: 85vh;
   border: 10px solid #aac4ff;
+  z-index: 0
 }
 
 .close--button {
@@ -141,6 +142,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 3px;
+  z-index: 1
+}
+
+.close--button:hover {
+  color: #dddddd;
 }
 
 .enlarge--button {
@@ -152,6 +158,10 @@
   height: 20px;
   max-width: 20px;
   max-height: 20px;
+}
+
+.enlarge--button:hover {
+  opacity: 75%
 }
 
 .map--content {

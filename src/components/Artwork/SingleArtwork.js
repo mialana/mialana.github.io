@@ -31,7 +31,14 @@ function SingleArtwork({ art }) {
           }}
         />
         <div className="art--content">
-          <img src={art} alt="" />
+          {String(art).includes(".mp4") ? (
+            <video width="100%" controls autoplay="true" muted loop>
+              <source src={art} type="video/mp4" />
+              Loading...
+            </video>
+          ) : (
+            <img src={art} alt="" />
+          )}
         </div>
         <div>
           <Popup open={open} onClose={closeModal}>
@@ -39,7 +46,14 @@ function SingleArtwork({ art }) {
               <button onClick={() => setOpen(false)} className="close--button">
                 &times;
               </button>
-              <img src={art} alt="" className="modal--image" />
+              {String(art).includes(".mp4") ? (
+                <video className="modal--image" controls autoplay="true" muted loop>
+                  <source className="modal--image" src={art} type="video/mp4" />
+                  Loading...
+                </video>
+              ) : (
+                <img className="modal--image" src={art} alt="" />
+              )}
             </div>
           </Popup>
         </div>

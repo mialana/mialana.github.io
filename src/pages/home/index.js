@@ -11,7 +11,7 @@ function HomePage() {
             </Helmet>
             <Navbar />
             <Landing />
-            <UnderConstruction />
+            {/* <UnderConstruction /> */}
             {/* <Experience />
             <Skills /> */}
             <Projects />
