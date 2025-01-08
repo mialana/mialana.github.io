@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 
-function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
+function SingleProject({ theme, key, data }) {
     const useStyles = makeStyles((t) => ({
         iconBtn: {
             display: 'flex',
@@ -38,40 +38,40 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
     return (
         <Fade bottom>
             <div
-                key={id}
+                key={key}
                 className='singleProject'
                 style={{ backgroundColor: theme.quaternary }}
             >
                 <div className='projectContent'>
                     <h2
-                        id={name.replace(' ', '-').toLowerCase()}
+                        id={data.name.replace(' ', '-').toLowerCase()}
                         style={{ color: theme.tertiary }}
                     >
-                        {name}
+                        {data.name}
                     </h2>
-                    <img src={image ? image : placeholder} alt={name} />
+                    {/* <img src={image ? image : placeholder} alt={data.name} /> */}
                     <div className='project--showcaseBtn'>
-                        {demo.map((d) => {
+                        {/* {demo.map((d) => {
                             return <a
                             href={d}
                             target='_blank'
                             rel='noreferrer'
                             className={classes.iconBtn}
-                            aria-labelledby={`${name
+                            aria-labelledby={`${data.name
                                 .replace(' ', '-')
-                                .toLowerCase()} ${name
+                                .toLowerCase()} ${data.name
                                 .replace(' ', '-')
                                 .toLowerCase()}-demo`}
                         >
                             <FaPlay
-                                id={`${name
+                                id={`${data.name
                                     .replace(' ', '-')
                                     .toLowerCase()}-demo`}
                                 className={classes.icon}
                                 aria-label='Demo'
                             />
                         </a>
-                        })}
+                        })} */}
                         <Link to="temp">
                             Get More Info
                         </Link>
@@ -84,7 +84,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                         color: theme.tertiary,
                     }}
                 >
-                    {desc}
+                    {data.description}
                 </p>
                 <div
                     className='project--lang'
@@ -93,9 +93,9 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                         color: theme.tertiary,
                     }}
                 >
-                    {tags.map((tag, id) => (
+                    {/* {tags.map((tag, id) => (
                         <span key={id}>{tag}</span>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </Fade>

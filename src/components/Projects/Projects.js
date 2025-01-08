@@ -9,6 +9,8 @@ import { HiArrowRight } from 'react-icons/hi';
 import './Projects.css';
 import SingleProject from './SingleProject/SingleProject';
 
+import MiniMinecraftData from '../../data/singleProject/projectData1'
+
 function Projects() {
 
     const { theme } = useContext(ThemeContext);
@@ -55,13 +57,7 @@ function Projects() {
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
-                                    id={project.id}
-                                    name={project.projectName}
-                                    desc={project.projectDesc}
-                                    tags={project.tags}
-                                    code={project.code}
-                                    demo={project.demo}
-                                    image={project.image}
+                                    data={MiniMinecraftData}
                                 />
                             ))}
                         </div>
