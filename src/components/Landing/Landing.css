@@ -91,6 +91,10 @@
   opacity: 0.7;
 }
 
+.lcr--content .typed-header {
+  font-size: 1.15rem;
+}
+
 .lcr--quote em {
   font-weight: 500;
   font-size: 0.9rem;
