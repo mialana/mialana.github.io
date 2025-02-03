@@ -150,7 +150,7 @@ function Landing() {
 
                         <p className='lcr--quote'>
                             <em>
-                                "A student keeps her eyes on the sky but her feet steady on the ground. She builds a staircase of books, all the way to the stars."
+                                "The student keeps her eyes on the sky but her feet steady on the ground. She builds a staircase of books, all the way to the stars."
                             </em>
                         </p>
 
