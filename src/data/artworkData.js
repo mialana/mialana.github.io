@@ -23,7 +23,7 @@ export const artworkData = [
   {
     name: "3D Modeling",
     id: "mo",
-    images: [m1, m4, m2, m3, m5, m6]
+    images: [m1, m4, m2, m3, m5]
   },
   {
     name: "Photography",
