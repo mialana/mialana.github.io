@@ -87,8 +87,14 @@
 .lcr--content p {
   margin-top: 1.45rem;
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   opacity: 0.7;
+}
+
+.lcr--quote em {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
 
 .lcr-buttonContainer {
@@ -117,10 +123,15 @@
   }
 
   .lcr--content p {
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
     font-weight: 500;
     font-size: 1rem;
+  }
+
+  .lcr--quote em {
+    font-size: 0.7rem;
+    margin-top: 0rem;
   }
 
   .lcr-buttonContainer {
@@ -133,6 +144,7 @@
 }
 
 @media (max-width: 900px) {
+
   .landing--img {
     --img-size: 300px;
   }
@@ -164,7 +176,7 @@
     justify-content: space-between;
   }
   .landing--img {
-    --img-size: 200px;
+    --img-size: 150px;
     left: 50%;
     top: 30%;
     border: 8px solid #eaeaea;
@@ -186,7 +198,7 @@
     background-color: #f4f6fe;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 5rem 2rem 2.5rem 2rem;
   }
   .lcr--content {
     margin-top: 20%;
@@ -199,13 +211,13 @@
     text-align: center;
   }
   .lcr--content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .lcr--content p {
     font-size: 0.95rem;
     text-align: center;
-    margin: 0 auto;
+    margin: 0.5rem auto 0 auto;
     width: 90%;
   }
   .lcr-buttonContainer {

@@ -141,10 +141,18 @@ function Landing() {
                             typeSpeed={40}
                             backSpeed={50}
                             className="typed-header"
-                            style={{ color: theme.primary, fontSize: '20px' }}
+                            style={{ color: theme.primary }}
                             loop
                         />
-                        <p>{headerData.description}</p>
+                        <p>
+                            Hi, I'm Amy, welcome to my personal portfolio. My hometown is <strong>Portland, Oregon</strong>, and I'm currently an undergrad at the University of Pennsylvania pursuing a BSE in <strong>Digital Media Design</strong> (3D computer programming).
+                        </p>
+
+                        <p className='lcr--quote'>
+                            <em>
+                                "A student keeps her eyes on the sky but her feet steady on the ground. She builds a staircase of books, all the way to the stars."
+                            </em>
+                        </p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
