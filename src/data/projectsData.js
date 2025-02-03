@@ -67,7 +67,7 @@ export const projectsData = [
         projectDesc: 'A collaborative project to create an interactive 3D world exploration and \
         alteration program in the style of the computer game Minecraft.',
         tags: ['GLSL / OpenGL', 'C++', '*pathfinding', '*ray-tracing'],
-        code: 'https://github.com/mialana/mini-minecraft',
+        code: '',
         demo: ['https://youtu.be/uaXJtYumZVE?si=N0NM2tBLTn9BfpwY&t=159'],
         image: two
     },

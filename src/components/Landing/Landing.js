@@ -8,7 +8,7 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 import './Landing.css';
 
-import headshot from '../../../src/assets/jpg/headshot-v0.jpg';
+import headshot from '../../../src/assets/png/headshot-2025-v1.png';
 
 import {
     FaGithub, FaLinkedin, FaInstagram
@@ -136,8 +136,8 @@ function Landing() {
                         <Typed
                             strings={[
                                 'Computer Graphics Researcher',
-                                'Student Web Developer',
-                                '3D Artificial Intelligence Intern']}
+                                'Student Web Programmer',
+                                '3D Artificial Intelligence Developer']}
                             typeSpeed={40}
                             backSpeed={50}
                             className="typed-header"
